@@ -252,7 +252,7 @@ This document contains the solution to find Internally and externally divided co
 Download all python codes from 
 %
 \begin{lstlisting}
-https://github.com/Anjalibagade/EE5600/tree/master/Codes
+https://github.com/Anjalibagade/EE5600/tree/master/Assignment1
 \end{lstlisting}
 %
 and latex codes from 
@@ -275,18 +275,18 @@ https://github.com/Anjalibagade/EE5600
 \begin{center}
 {\underline{\Large\bf Explaination}} 
 \end{center}
-{\underline{\bf 1.Finding internal coordinate point}}
+\underline {1.Finding internal coordinate point}
 
 Let us consider
-$\overrightarrow{OP}$ is a vector which divides $\overrightarrow{OA}$ and $\overrightarrow{OB}$ in the ratio of 7:5 gives internally divided point.
+P is a vector which divides A and B in the ratio of 7:5 gives internally divided point.
 
 Given that
 \begin{align}
-    \Vec{\overrightarrow {OA}}=\myvec{-3\\-4}
+    \Vec{A}=\myvec{-3\\-4}
 \end{align}
 
 \begin{align}
-    \Vec{\overrightarrow {OA}}=\myvec{-8\\7}
+    \Vec{B}=\myvec{-8\\7}
 \end{align}
 
 \begin{equation}
@@ -296,91 +296,63 @@ Given that
 \implies 5AP=7BP
 \end{equation}
 \begin{equation}
-5(\overrightarrow{OP}-\overrightarrow{OA})=7(\overrightarrow{OB}-\overrightarrow{OP})
+5(\vec{P}-\vec{A})=7(\vec{B}-\vec{P})
 \end{equation}
 On solving  above equation we get,
-\begin{equation}
-\implies 12(\overrightarrow{OP})=5(\overrightarrow{OA})+7(\overrightarrow{OB})
-\end{equation}
-
-\begin{equation}
-\implies(\overrightarrow{OP})=
-\frac{5}{12}
-(\overrightarrow{OA})+\frac{7}{12}(\overrightarrow{OB})
-\end{equation}
- \begin{equation}
-\overrightarrow{OP}=
-\frac{5}{12}
 \begin{align}
-\myvec{-3\\-4}
+\implies 12\vec{P}=5\vec{A}+7\vec{B} 
+\end{align}
+\begin{align}
+\implies\vec{P}=
+\frac{5}{12}
+\vec{A}+\frac{7}{12}\vec{B}
+\end{align}
+ \begin{align}
+ \vec{P}=\frac{5}{12}\myvec{-3\\-4}+\frac{7}{12}\myvec{-8\\7}
  \end{align}
-+\frac{7}{12}
 \begin{align}
-\myvec{-8\\7}
-\end{align}
- \end{equation}
-\begin{equation}
-\overrightarrow{OP}=
-\begin{align}
+\vec{P}=
 \myvec{\frac{-15}{12} \\[0.2cm]\frac{-20}{12}}
-\end{align}
 +
-\begin{align}
 \myvec{\frac{-56}{12} \\[0.2cm]\frac{49}{12}}
 \end{align}
-\end{equation}
- Solving above equation we get internally divided coordinate point
-\begin{equation}
-\overrightarrow{OP}=
- \begin{align}
-\myvec{\frac{-71}{12} \\[0.2cm]\frac{29}{12}}
+Solving above equation we get internally divided coordinate point
+\begin{align}
+\vec{P}=\myvec{\frac{-71}{12} \\[0.2cm]\frac{29}{12}}
 \end{align}
-\end{equation}
+
 {\underline{\bf 2.Finding external coordinate point}}
 
 Let us consider
-$\overrightarrow{OP}$ is a vector which divides $\overrightarrow{OA}$ and $\overrightarrow{OB}$ in the ratio of 7:5 gives externally divided point.
+P is a vector which divides A and B in the ratio of 7:5 gives externally divided point.
 \begin{equation}
-5(\overrightarrow{OA}-\overrightarrow{OP})=7(\overrightarrow{OB}-\overrightarrow{OP})
+5(\vec{A}-\vec{P})=7(\vec{B}-\vec{P})
 \end{equation}
 Solving above equation
 \begin{equation}
-\implies 2(\overrightarrow{OP})=7(\overrightarrow{OB})-5(\overrightarrow{OA})
+\implies 2\vec{P}=7\vec{B}-5\vec{A} 
 \end{equation}
-
-\begin{equation}
-\implies (\overrightarrow{OP})=
-\frac{7}{2}
-(\overrightarrow{OB})-\frac{5}{2}(\overrightarrow{OA})
-\end{equation}
-\begin{equation}
-\overrightarrow{OP}=
-\frac{7}{2}
 \begin{align}
-\myvec{-8\\7}
- \end{align}
+\implies\vec{P}=
+\frac{7}{2}
+\vec{B}-\frac{5}{2}\vec{A}
+\end{align}
+\begin{align}
+\vec{P}=
+\frac{7}{2}\myvec{-8\\7}
 -\frac{5}{2}
-\begin{align}
 \myvec{-3\\-4}
 \end{align}
- \end{equation}
-\begin{equation}
-\overrightarrow{OP}=
+
 \begin{align}
-\myvec{\frac{-56}{2} \\[0.2cm]\frac{49}{2}}
+\vec{P}=\myvec{\frac{-56}{2} \\[0.2cm]\frac{49}{2}}
++\myvec{\frac{15}{2} \\[0.2cm]\frac{-20}{2}}
 \end{align}
-+
+Solving above equation we get externally divided coordinate point
 \begin{align}
-\myvec{\frac{15}{2} \\[0.2cm]\frac{-20}{2}}
+\vec{P}=\myvec{\frac{-41}{2} \\[0.2cm]\frac{69}{2}}
 \end{align}
-\end{equation}
- Solving above equation we get externally divided coordinate point
-\begin{equation}
-\overrightarrow{OP}=
-\begin{align}
-\myvec{\frac{-41}{2} \\[0.2cm]\frac{69}{2}}
-\end{align}
-\end{equation}
+
 \newpage
 
 \maketitle
