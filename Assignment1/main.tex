@@ -270,99 +270,66 @@ Find the coordinates of the point which divides, internally and externally, the 
 \begin{flushleft}
 \underline{\Large{\bf Solution:}} 
 \end{flushleft}
-
+Let us consider
+P is a point which divides A and B in the ratio of 7:5 gives internally divided point.
 \begin{itemize}
 \item {\bf {Finding internal coordinate point :}}  
 \end{itemize}
-
-Let us consider
-P is a vector which divides A and B in the ratio of 7:5 gives internally divided point.
-Given that,
+The coordinates of point S\myvec{a,b} which divides the line joining points A\myvec{x_1,y_1} and B\myvec{x_2,y_2} internally in the ratio m:n is given by the section formula
 \begin{align}
-    \Vec{A}=\myvec{-3\\-4}
+\vec{S\myvec{a,b}}=\large\myvec{\frac{mx_2+nx_1}{m+n},\frac{my_2+ny_1}{m+n}}    
+\end{align}
+Substitute all the values in the equation given above
+\begin{align}
+\implies\myvec{\frac{7(-8)+5(-3)}{7+5},\frac{7(7)+5(-4)}{7+5}}
+\end{align}
+\begin{align}
+\implies\myvec{\frac{-56-15}{12},\frac{49-20}{12}}
+\end{align}
+\begin{align}
+\implies\myvec{\frac{-71}{12},\frac{29}{12}}   
+\end{align}
+Hence internal division is taking place at point
+\begin{align}
+\vec{S\myvec{a,b}}=\myvec{\frac{-71}{12},\frac{29}{12}}   
 \end{align}
 
-\begin{align}
-    \Vec{B}=\myvec{-8\\7}
-\end{align}
-
-\begin{equation}
-\frac{AP}{BP} =  \frac{7}{5}   
-\end{equation}
-\begin{equation}
-\implies 5AP=7BP
-\end{equation}
-\begin{equation}
-5(\vec{P}-\vec{A})=7(\vec{B}-\vec{P})
-\end{equation}
-On solving  above equation we get,
-\begin{align}
-\implies 12\vec{P}=5\vec{A}+7\vec{B} 
-\end{align}
-\begin{align}
-\implies\vec{P}=
-\frac{5}{12}
-\vec{A}+\frac{7}{12}\vec{B}
-\end{align}
- \begin{align}
- \vec{P}=\frac{5}{12}\myvec{-3\\-4}+\frac{7}{12}\myvec{-8\\7}
- \end{align}
-\begin{align}
-\vec{P}=
-\myvec{\frac{-15}{12} \\[0.2cm]\frac{-20}{12}}
-+
-\myvec{\frac{-56}{12} \\[0.2cm]\frac{49}{12}}
-\end{align}
-Solving above equation we get internally divided coordinate point
-\begin{align}
-\vec{P}=\myvec{\frac{-71}{12} \\[0.2cm]\frac{29}{12}}
-\end{align}
+Similarly,
+\newpage
 \begin{itemize}
-\item {\bf {Finding external coordinate point :}} 
+\item {\bf {Finding external coordinate point :}}  
 \end{itemize}
+The coordinates of point T\myvec{p,q} which divides the line joining points A\myvec{x_1,y_1} and B\myvec{x_2,y_2} externally in the ratio m:n is given by the section formula
+\begin{align}
+\vec{T\myvec{p,q}}=\large\myvec{\frac{mx_2-nx_1}{m-n},\frac{my_2-ny_1}{m-n}}    
+\end{align}
+Substitute all the values in the equation given above
+\begin{align}
+\implies\myvec{\frac{7(-8)-5(-3)}{7-5},\frac{7(7)-5(-4)}{7-5}}    
+\end{align}
+\begin{align}
+\implies\myvec{\frac{-56+15}{2},\frac{49+20}{2}}
+\end{align}
+\begin{align}
+\implies\myvec{\frac{-41}{2},\frac{69}{2}}
+\end{align}
+Hence external division is taking place at point
 
-Let us consider
-P is a vector which divides A and B in the ratio of 7:5 gives externally divided point.
 \begin{equation}
-5(\vec{A}-\vec{P})=7(\vec{B}-\vec{P})
+\vec{T\myvec{p,q}}=\myvec{\frac{-41}{2},\frac{69}{2}}
 \end{equation}
-Solving above equation
-\begin{equation}
-\implies 2\vec{P}=7\vec{B}-5\vec{A} 
-\end{equation}
-\begin{align}
-\implies\vec{P}=
-\frac{7}{2}
-\vec{B}-\frac{5}{2}\vec{A}
-\end{align}
-\begin{align}
-\vec{P}=
-\frac{7}{2}\myvec{-8\\7}
--\frac{5}{2}
-\myvec{-3\\-4}
-\end{align}
-
-\begin{align}
-\vec{P}=\myvec{\frac{-56}{2} \\[0.2cm]\frac{49}{2}}
-+\myvec{\frac{15}{2} \\[0.2cm]\frac{-20}{2}}
-\end{align}
-Solving above equation we get externally divided coordinate point
-\begin{align}
-\vec{P}=\myvec{\frac{-41}{2} \\[0.2cm]\frac{69}{2}}
-\end{align}
-
 \newpage
 
 \maketitle
 \begin{center}
-\underline{\Large\bf{Result}}  
+\textbf{Result}  
 \end{center}
 Plot of coordinate of the points obtained from Python code is shown below.
 \\
 \begin{figure}[!ht]
 
-\includegraphics[width=\columnwidth]{internal coordinate.png}
-\includegraphics[width=\columnwidth]{external coordinate.png}
+\includegraphics[width=\columnwidth]{Internal divided plot.png}
+\includegraphics[width=\columnwidth]{External divided plot.png}
 \caption{ Plot of coordinate of the point which divides internally and externally }
 \label{fig}
 \end{figure}
