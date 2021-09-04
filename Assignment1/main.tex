@@ -273,95 +273,66 @@ Find the coordinates of the point which divides, internally and externally, the 
 \begin{flushleft}
 \underline{\Large{\bf Solution:}} 
 \end{flushleft}
-
+Let us consider
+{\bf{S}} and  {\bf{T}} are  Vectors which divides {\bf{A}} and {\bf{B}} in the ratio of 7:5 gives internally and externally divided points respectively.
 \begin{enumerate}
 \item {\bf {Finding internal coordinate point :}}  
 
-Let us consider
-{\bf{P}} is a vector which divides {\bf{A}} and {\bf{B}} in the ratio of 7:5 gives internally divided point.
-
-Given that,
+The coordinates of point {\bf{S}} which divides the line joining   {\bf{A}} and  {\bf{B}} internally in the ratio m:n is given by the section formula
 \begin{align}
-    \Vec{A}=\myvec{-3\\-4}
+\vec{S}=\large\myvec{\frac{mx_2+nx_1}{m+n},\frac{my_2+ny_1}{m+n}}    
 \end{align}
-\begin{align}
-    \Vec{B}=\myvec{-8\\7}
-\end{align}
-\begin{equation}
-\frac{\vec{PA}}{\vec{BP}} =  \frac{7}{5}   
-\end{equation}
-\begin{equation}
-\implies 5\vec{PA}=7\vec{BP}
-\end{equation}
-\begin{equation}
-5(\vec{P}-\vec{A})=7(\vec{B}-\vec{P})
-\end{equation}
-On solving  above equation we get,
-\begin{align}
-\implies 12\vec{P}=5\vec{A}+7\vec{B} 
-\end{align}
-\begin{align}
-\implies\vec{P}=\frac{5}{12}\vec{A}+\frac{7}{12}\vec{B}
-\end{align}
-\begin{align}
-\vec{p}=\myvec{\vec{A} & \vec{B}}\myvec{\frac{5}{12}\\[0.2cm]\frac{7}{12}}
-\end{align}
+Rewrite above formula in terms of matrix 
  \begin{align}
- \vec{P}={\myvec{-3 & -8\\-4 & 7}}\myvec{\frac{5}{12}\\[0.2cm]\frac{7}{12}}
+ \vec{S}={\myvec{x_2&x_1\\y_2&y_1}}\myvec{\frac{m}{m+n}\\[0.2cm]\frac{n}{m+n}}
  \end{align}
  \begin{align}
-\implies\myvec{\frac{5\brak{-3}+7\brak{-8}}{12}\\[0.2cm]\frac{5\brak{-4}+7\brak{7}}{12}}
+ \vec{S}={\myvec{-8 & -3\\7 & -4}}\myvec{\frac{7}{12}\\[0.2cm]\frac{5}{12}}
+ \end{align}
+\begin{align}
+\implies\myvec{\frac{7\brak{-8}+5\brak{-3}}{12}\\[0.2cm]\frac{7\brak{7}+5\brak{-4}}{12}}
 \end{align}
 \begin{align}
-\vec{p}=\myvec{\frac{\brak{-15}+\brak{-56}}{12}\\[0.2cm]\frac{\brak{-20}+49}{12}}
+\vec{S}=\myvec{\frac{\brak{-56}+\brak{-15}}{12}\\[0.2cm]\frac{49+\brak{-20}}{12}}
 \end{align}
 Solving above equation we get internally divided coordinate point
 \begin{align}
-\vec{P}=\myvec{\frac{-71}{12} \\[0.2cm]\frac{29}{12}}
+\vec{S}=\myvec{\frac{-71}{12} \\[0.2cm]\frac{29}{12}}
 \end{align}
+
+
+Similarly,
+
 \item {\bf {Finding external coordinate point :}} 
 
-Let us consider
-{\bf{P}} is a vector which divides {\bf{A}} and {\bf{B}} in the ratio of 7:5 gives externally divided point.
-\begin{equation}
-\frac{\vec{AP}}{\vec{BP}} =  \frac{7}{5}   
-\end{equation}
-\begin{equation}
-\implies 5\vec{AP}=7\vec{BP}
-\end{equation}
-\begin{equation}
-5(\vec{A}-\vec{P})=7(\vec{B}-\vec{P})
-\end{equation}
-Solving above equation
-\begin{equation}
-\implies 2\vec{P}=7\vec{B}-5\vec{A} 
-\end{equation}
+The coordinates of point {\bf{T}} which divides the line joining points {\bf{A}} and {\bf{B}} externally in the ratio m:n is given by the section formula
 \begin{align}
-\implies\vec{P}=\frac{7}{2}\vec{B}-\frac{5}{2}\vec{A}
+\vec{T}=\large\myvec{\frac{mx_2-nx_1}{m-n},\frac{my_2-ny_1}{m-n}}    
 \end{align}
-\begin{align}
-\vec{p}=\myvec{\vec{B} & \vec{A}}\myvec{\frac{7}{2}\\[0.2cm]\frac{-5}{2}}
-\end{align}
-\begin{align}
-\vec{P}={\myvec{-8 & -3\\ 7 & -4}}\myvec{\frac{7}{2}\\[0.2cm]\frac{-5}{2}}
+Rewrite above formula in terms of matrix 
+ \begin{align}
+ \vec{T}={\myvec{x_2&x_1\\y_2&y_1}}\myvec{\frac{m}{m-n}\\[0.2cm]\frac{-n}{m-n}}
  \end{align}
-\begin{align}
+  \begin{align}
+ \vec{T}={\myvec{-8 & -3\\7 & -4}}\myvec{\frac{7}{2}\\[0.2cm]\frac{-5}{2}}
+ \end{align}
+ \begin{align}
 \implies\myvec{\frac{7\brak{-8}-5\brak{-3}}{2}\\[0.2cm]\frac{7\brak{7}-5\brak{-4}}{2}}
 \end{align}
 
 \begin{align}
-\vec{p}=\myvec{\frac{\brak{-56}+15}{2}\\[0.2cm]\frac{49+20}{2}}
+\vec{T}=\myvec{\frac{\brak{-56}+15}{2}\\[0.2cm]\frac{49+20}{2}}
 \end{align}
-Solving above equation we get externally   divided coordinate point
+Solving above equation we get externally divided coordinate point
 \begin{align}
-\vec{P}=\myvec{\frac{-41}{2} \\[0.2cm]\frac{69}{2}}
+\vec{T}=\myvec{\frac{-41}{2} \\[0.2cm]\frac{69}{2}}
 \end{align}
 
 \newpage
 
 \maketitle
 \begin{center}
-\underline{\Large\bf{Result}}  
+\underline{\Large{\bf Result}  }
 \end{center}
 Plot of coordinate of the points obtained from Python code is shown below.
 \\
