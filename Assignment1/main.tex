@@ -275,6 +275,13 @@ Find the coordinates of the point which divides, internally and externally, the 
 \end{flushleft}
 Let us consider
 {\bf{S}} and  {\bf{T}} are  Vectors which divides {\bf{A}} and {\bf{B}} in the ratio of 7:5 gives internally and externally divided points respectively.
+Given that,
+\begin{align}
+    \Vec{A}=\myvec{-3\\-4}
+\end{align}
+\begin{align}
+    \Vec{B}=\myvec{-8\\7}
+\end{align}
 \begin{enumerate}
 \item {\bf {Finding internal coordinate point :}}  
 
@@ -284,10 +291,13 @@ The coordinates of point {\bf{S}} which divides the line joining   {\bf{A}} and 
 \end{align}
 Rewrite above formula in terms of matrix 
  \begin{align}
- \vec{S}={\myvec{x_2&x_1\\y_2&y_1}}\myvec{\frac{m}{m+n}\\[0.2cm]\frac{n}{m+n}}
+ \vec{S}={\myvec{\frac{m}{m+n}\\[0.2cm]\frac{n}{m+n}}\myvec{x_2&x_1\\y_2&y_1}}
+ \end{align}
+  \begin{align}
+ \vec{S}={\myvec{\frac{m}{m+n}\\[0.2cm]\frac{n}{m+n}}\myvec{\vec{B}&\vec{A}}}
  \end{align}
  \begin{align}
- \vec{S}={\myvec{-8 & -3\\7 & -4}}\myvec{\frac{7}{12}\\[0.2cm]\frac{5}{12}}
+ \vec{S}={\myvec{\frac{7}{12}\\[0.2cm]\frac{5}{12}}\myvec{-8 & -3\\7 & -4}}
  \end{align}
 \begin{align}
 \implies\myvec{\frac{7\brak{-8}+5\brak{-3}}{12}\\[0.2cm]\frac{7\brak{7}+5\brak{-4}}{12}}
@@ -311,15 +321,17 @@ The coordinates of point {\bf{T}} which divides the line joining points {\bf{A}}
 \end{align}
 Rewrite above formula in terms of matrix 
  \begin{align}
- \vec{T}={\myvec{x_2&x_1\\y_2&y_1}}\myvec{\frac{m}{m-n}\\[0.2cm]\frac{-n}{m-n}}
+ \vec{T}={\myvec{\frac{m}{m-n}\\[0.2cm]\frac{-n}{m-n}}\myvec{x_2&x_1\\y_2&y_1}}
+ \end{align}
+\begin{align}
+ \vec{T}={\myvec{\frac{m}{m-n}\\[0.2cm]\frac{-n}{m-n}}\myvec{\vec{B}&\vec{A}}}
  \end{align}
   \begin{align}
- \vec{T}={\myvec{-8 & -3\\7 & -4}}\myvec{\frac{7}{2}\\[0.2cm]\frac{-5}{2}}
+ \vec{T}={\myvec{\frac{7}{2}\\[0.2cm]\frac{-5}{2}}\myvec{-8 & -3\\7 & -4}}
  \end{align}
- \begin{align}
+\begin{align}
 \implies\myvec{\frac{7\brak{-8}-5\brak{-3}}{2}\\[0.2cm]\frac{7\brak{7}-5\brak{-4}}{2}}
 \end{align}
-
 \begin{align}
 \vec{T}=\myvec{\frac{\brak{-56}+15}{2}\\[0.2cm]\frac{49+20}{2}}
 \end{align}
@@ -328,7 +340,6 @@ Solving above equation we get externally divided coordinate point
 \vec{T}=\myvec{\frac{-41}{2} \\[0.2cm]\frac{69}{2}}
 \end{align}
 
-\newpage
 
 \maketitle
 \begin{center}
