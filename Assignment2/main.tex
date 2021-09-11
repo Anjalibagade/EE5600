@@ -243,21 +243,21 @@ columns=fullflexible
    \end{tikzpicture}}
 \vspace{2ex}
 \begin{center}
-{\underline{\Large \bf Linear form}}
+{\underline{\Large \bf vector}}
 \end{center}
 \begin{abstract}
-This document contains the graph of lines
+This document contains the solution to find Internally and externally divided coordinate points.
 \end{abstract}
 Download all python codes from 
 %
 \begin{lstlisting}
-https://github.com/Anjalibagade/EE5600/tree/master/Assignment1
+https://github.com/Anjalibagade/EE5600/tree/master/Assignment2
 \end{lstlisting}
 %
 and latex codes from 
 %
 \begin{lstlisting}
-https://github.com/Anjalibagade/EE5600/Assignment1
+https://github.com/Anjalibagade/EE5600/Assignment2
 \end{lstlisting}
 %
 
@@ -265,99 +265,73 @@ https://github.com/Anjalibagade/EE5600/Assignment1
 \begin{center}
 \underline{\Large{\bf Problem }}
 \begin{flushleft}
-\bf Linear form, Example-2, Question-3 (a,c)
+\bf Vector-2, Example-4, Question-5
 \end{flushleft}
 \end{center}
-Draw the graphs of the following equations 
-\begin{enumerate}
-    \item \myvec{1 & 1}{\bf{x}}=4
-     \item \myvec{3 & -1}{\bf{x}}=0
-\end{enumerate}
+Sketch the loci of the following equation
+\begin{align}
+    y^{2}=x
+\end{align}
 \maketitle
 \begin{flushleft}
 \underline{\Large{\bf Solution:}} 
 \end{flushleft}
-\begin{enumerate}
-\item Given that,
+Given equation is
 \begin{align}
-\myvec{1 & 1}{\bf{x}}=4\label{sol}
-    \end{align}
-Let us consider
-\begin{align}
-\vec{x}=\myvec{0\\a} 
+    y^{2}=x
 \end{align}
-Substitute above equation in \ref{sol}
+We can write above equation as
 \begin{align}
- \myvec{1 & 1}\myvec{0\\a} =4    
+\vec{x}^{T}\vec{A}\vec{x}+2\vec{u}^{T}\vec{x}+f=0
 \end{align}
-Solving above equation
+where,
 \begin{align}
-a=4
+\vec{A}=\myvec{0&0\\0&1}, \vec{u}=\myvec{-\frac{1}{2}\\0}, f=0
 \end{align}
-Now,Let us consider
 \begin{align}
-\vec{x}=\myvec{b\\0} 
+\mydet{A}=0
 \end{align}
-Substitute above equation in \ref{sol}
-\begin{align}
- \myvec{1 & 1}\myvec{b\\0} =4    
-\end{align}
-Solving above equation
-\begin{align}
-b=4
-\end{align}
-Hence,
-\begin{align}
-{\vec{x}}=\myvec{0\\4}  and \myvec{4\\0} 
-\end{align}
+From above equation we can say that the curve is parabola.
 
-Graph of line obtained from Python code is shown below.
+The vertex of parabola can be given as $\vec{c}$
+\begin{align}
+    \myvec{\vec{u}^{T}+\eta \vec{p_1}^{T}\\A}\vec{c}=\myvec{-f\\\eta \vec{p_1}-\vec{u}}\label{1}
+\end{align}
+where 
+\begin{align}
+    \vec{p_1}=\myvec{1\\0},\eta=\vec{p_1}^{T}\vec{u} 
+\end{align}
+\begin{align}
+    \eta=\myvec{1&0}\myvec{-\frac{1}{2}\\0}=\myvec{-\frac{1}{2}}
+\end{align}
+From \ref{1} we can find out few values given below
+\begin{align}
+\myvec{\vec{u}^{T}+\eta \vec{p_1}^{T}}=\myvec{-\frac{1}{2}&0}+\myvec{-\frac{1}{2}}\myvec{1&0}=\myvec{-1&0}
+\end{align}
+\begin{align}
+ \myvec{\eta \vec{p_1}-\vec{u}}=\myvec{-\frac{1}{2}}\myvec{1\\0}-\myvec{-\frac{1}{2}\\0}=\myvec{0\\0}  
+\end{align}
+Substituting all the values in equation \ref{1}
+\begin{align}
+    \myvec{-1&0\\0&0\\0&1}\vec{c}=\myvec{0\\0\\0}
+\end{align}
+\begin{align}
+    \myvec{-1&0\\0&1}\vec{c}=\myvec{0\\0} 
+\end{align}
+\begin{align}
+\vec{c}=\myvec{0\\0}
+\end{align}
+\newpage
+\maketitle
+\begin{center}
+\underline{\Large\bf{Result}}  
+\end{center}
+Plot of coordinate of the points obtained from Python code is shown below.
 \\
 \begin{figure}[!ht]
-\includegraphics[width=\columnwidth]{1.png}
-\caption{ Graph-1 }
+\includegraphics[width=\columnwidth]{parabola.png}
+\caption{ Parabola with vertex \vec{c}=\myvec{0\\0} }
 \label{fig}
 \end{figure}
-\item Given that,
-\begin{align}
-\myvec{3 & -1}{\bf{x}}=0\label{sol}
-    \end{align}
-Let us consider
-\begin{align}
-\vec{x}=\myvec{0\\a} 
-\end{align}
-Substitute above equation in \ref{sol}
-\begin{align}
-\myvec{3 & -1}\myvec{0\\a} =0    
-\end{align}
-Solving above equation
-\begin{align}
-a=0
-\end{align}
-Now,Let us consider
-\begin{align}
-\vec{x}=\myvec{a\\b} 
-\end{align}
-Substitute above equation in \ref{sol}
-\begin{align}
- \myvec{3 & -1}\myvec{a\\b} =0   
-\end{align}
-Solving above equation
-\begin{align}
-3a=b
-\end{align}
-If a=1 then b=3
-Hence,
-\begin{align}
-{\vec{x}}=\myvec{0\\0}  and \myvec{1\\3} 
-\end{align}
-Graph of line obtained from Python code is shown below.
-\\
-\begin{figure}[!ht]
-\includegraphics[width=\columnwidth]{2.png}
-\caption{ Graph-2 }
-\label{fig}
-\end{figure}
- \end{enumerate} 
+
 \end{document}
-
